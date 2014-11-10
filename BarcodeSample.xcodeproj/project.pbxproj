@@ -14,6 +14,9 @@
 		2C2229D61A0CC26D0093F958 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2229D51A0CC26D0093F958 /* Images.xcassets */; };
 		2C2229D91A0CC26D0093F958 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2229D71A0CC26D0093F958 /* LaunchScreen.xib */; };
 		2C2229E51A0CC26D0093F958 /* BarcodeSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2229E41A0CC26D0093F958 /* BarcodeSampleTests.m */; };
+		2C2229F21A0CC2B90093F958 /* BarCodeScannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2229F01A0CC2B90093F958 /* BarCodeScannerView.m */; };
+		2C2229F31A0CC2B90093F958 /* BarCodeScannerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C2229F11A0CC2B90093F958 /* BarCodeScannerView.xib */; };
+		2C2229F51A0CC3CB0093F958 /* logo_simform.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C2229F41A0CC3CB0093F958 /* logo_simform.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		2C2229DE1A0CC26D0093F958 /* BarcodeSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2229E31A0CC26D0093F958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2229E41A0CC26D0093F958 /* BarcodeSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarcodeSampleTests.m; sourceTree = "<group>"; };
+		2C2229EF1A0CC2B90093F958 /* BarCodeScannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarCodeScannerView.h; sourceTree = "<group>"; };
+		2C2229F01A0CC2B90093F958 /* BarCodeScannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarCodeScannerView.m; sourceTree = "<group>"; };
+		2C2229F11A0CC2B90093F958 /* BarCodeScannerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarCodeScannerView.xib; sourceTree = "<group>"; };
+		2C2229F41A0CC3CB0093F958 /* logo_simform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_simform.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +103,8 @@
 		2C2229C81A0CC26D0093F958 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C2229F41A0CC3CB0093F958 /* logo_simform.png */,
+				2C2229EE1A0CC2B90093F958 /* BarCodeScannerView */,
 				2C2229C91A0CC26D0093F958 /* Info.plist */,
 				2C2229CA1A0CC26D0093F958 /* main.m */,
 			);
@@ -117,6 +126,16 @@
 				2C2229E31A0CC26D0093F958 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C2229EE1A0CC2B90093F958 /* BarCodeScannerView */ = {
+			isa = PBXGroup;
+			children = (
+				2C2229EF1A0CC2B90093F958 /* BarCodeScannerView.h */,
+				2C2229F01A0CC2B90093F958 /* BarCodeScannerView.m */,
+				2C2229F11A0CC2B90093F958 /* BarCodeScannerView.xib */,
+			);
+			path = BarCodeScannerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +218,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2229F51A0CC3CB0093F958 /* logo_simform.png in Resources */,
+				2C2229F31A0CC2B90093F958 /* BarCodeScannerView.xib in Resources */,
 				2C2229D41A0CC26D0093F958 /* Main.storyboard in Resources */,
 				2C2229D91A0CC26D0093F958 /* LaunchScreen.xib in Resources */,
 				2C2229D61A0CC26D0093F958 /* Images.xcassets in Resources */,
@@ -219,6 +240,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C2229F21A0CC2B90093F958 /* BarCodeScannerView.m in Sources */,
 				2C2229D11A0CC26D0093F958 /* ViewController.m in Sources */,
 				2C2229CE1A0CC26D0093F958 /* AppDelegate.m in Sources */,
 				2C2229CB1A0CC26D0093F958 /* main.m in Sources */,
@@ -280,7 +302,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: K Kataria (F33HF48Q77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: K Kataria (F33HF48Q77)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -297,9 +320,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "397b3532-19b4-41d3-82ca-d06540ef1b49";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +346,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: K Kataria (F33HF48Q77)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: K Kataria (F33HF48Q77)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -333,8 +358,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "397b3532-19b4-41d3-82ca-d06540ef1b49";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -345,6 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BarcodeSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BarcodeSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

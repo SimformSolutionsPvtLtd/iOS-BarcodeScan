@@ -1,12 +1,5 @@
-//
-//  ViewController.m
-//  BarcodeSample
-//
-//  Created by Shah Hardik on 07/11/14.
-//  Copyright (c) 2014 SimformSolutions. All rights reserved.
-//
-
 #import "ViewController.h"
+#import "BarCodeScannerView.h"
 
 @interface ViewController ()
 
@@ -18,6 +11,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
+
+-(IBAction)StartBarcodeScanning:(id)sender
+{
+    [BarCodeScannerView showScannerWithCompletionBlock:^(NSString *result) {
+        if (result != nil && ![result isEqualToString:@""]) {
+            //some text has been scanned and text will return.
+            NSLog(@"%@",result);
+        }
+    }];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
